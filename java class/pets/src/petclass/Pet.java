@@ -1,7 +1,5 @@
 package petclass;
 
-
-
 public class Pet {
     private String name;
     private int age;
@@ -49,5 +47,29 @@ public class Pet {
     public void setLocation(String location) {
         this.location = location;
     }
-}
 
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public static void main(String[] args) {
+        // create a new pet instance using the empty constructor
+        Pet myPet = new Pet();
+
+        // use the setter methods to set the pet's attributes
+        myPet.setName("Max");
+        myPet.setAge(5);
+        myPet.setLocation("New York");
+        myPet.setType("Dog");
+
+        // use the getter methods to access the pet's attributes
+        System.out.println("Name: " + myPet.getName());
+        System.out.println("Age: " + myPet.getAge());
+        System.out.println("Location: " + myPet.getLocation());
+        System.out.println("Type: " + myPet.getType());
+    }
+
+    private String getLocation() {
+        return null;
+    }
+}
